@@ -1,0 +1,385 @@
+body{
+    background-image: linear-gradient(to right, rgb(19, 19, 41) , #242451 , rgb(19, 19, 41));
+    margin: 0 auto;
+}
+
+/*navigatie menu */
+
+header, nav, nav ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    gap: 2rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+header img{
+    height: 2rem;
+    margin-right: auto;
+}
+
+header li{
+    height: 2em;
+    line-height: 2em;
+    padding: 0.5em;
+}
+header li:hover{
+    background-color: #ffffff;
+}
+
+header ul{
+    display: flex;
+    gap: 1rem;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li a{
+    color: #242451;
+    text-decoration: none;
+    transition: ease;
+    padding-right: 3rem;
+}
+header nav ul li a:hover{
+    color: #d9a45e;
+    text-decoration:underline ;
+}
+
+/* main */
+/* Opmaak teksten */
+.titel{
+    display: flex;
+    background-image: url(images/Background-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 30vw;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    color: #ffffff;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 2rem; 
+    font-size: 4.5vw;  
+}
+
+h2{
+    color: #ffffff;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+
+h3{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 2rem;
+    line-height: 0rem;
+}
+
+p{
+    color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 1em;
+}
+
+td{
+    font-family: "Quicksand", sans-serif;
+    line-height: 1.3rem;
+    font-style: normal; 
+    color: #fff;
+}
+
+/* Opmaak pagina - Home */
+.nieuw{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: start;
+    padding: 2rem;
+}
+
+main a{
+    border: 0.1rem solid white;
+    padding: 0.5em 2em 0.5em 2em;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    font-family: "Quicksand", sans-serif;
+    transition: ease;
+}
+
+main a:hover{
+    color: #d9a45e;
+    border-color: #d9a45e;
+
+}
+
+.tegel-groot{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-items:start;
+    justify-content: center;
+    background-color: #484872;
+    border-radius: 2em;
+    color: #fff;
+    padding: 2rem;
+    margin: 1rem;
+
+}
+article img{
+    height: 350px;
+}
+
+/* Tegels klein*/
+.tegel-klein{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    align-items: center;
+    padding: 2rem;
+}
+.tegel-klein article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:start;
+    justify-content:center;
+    background-color: #484872;
+    border-radius: 2em;
+    width: 17.3rem;
+    color: #fff;
+    padding: 2rem;
+}
+
+.tegel-klein img{
+    height: 250px;
+}
+
+audio{
+    margin-top:1rem ;
+}
+/*over Ons*/
+.over-ons{
+    background-color: #484872;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.over-ons img{
+    width: 350px;
+}
+.over-ons p{
+    width: 60vw;
+}
+
+
+/*contact*/
+.contact{
+    display: flex;
+    align-items:start;
+    justify-content:space-between;
+    flex-wrap: wrap;
+
+}
+.contact img{
+    width: 35vw;
+}
+
+.contact h2{
+    padding-left: 2rem;
+}
+.contact p{
+    width: 40vw;
+    padding-left: 2rem;
+}
+
+/*code form https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_contact_form*/
+  /*tekst invulformulieren*/
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid  rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    resize: vertical;
+    font-family: "Quicksand", sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    background-color: #d9a45e;
+    color: rgb(0, 0, 0);
+  }
+
+  /*button*/
+  input[type=submit] {
+
+    background-color: #242451;
+    color: rgb(255, 255, 255);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    
+  }
+    /*button hover*/
+  input[type=submit]:hover {
+    background-color: #d9a45e;
+    
+  }
+  
+   /*tegel formulier*/ 
+  .container {
+    border-radius: 2rem;
+    background-color: #484872;
+    padding: 2rem;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    width: 45rem;
+    margin: 2rem;
+  }
+  /*Einde csscode formulier*/
+
+/*Footer*/ 
+footer{
+    display: flex;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #ffffff;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    gap: 2rem;
+}
+
+footer img{
+    height: 2rem;
+    margin-right: auto;
+    padding: 0.5rem;
+}
+
+footer a{
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #242451;
+    font-size: 1rem;
+    line-height: 0rem;
+    text-decoration: none;
+    transition: ease-out;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+footer a:hover{
+    color: #d9a45e;
+    text-decoration:underline;
+}
+
+/* Opmaak pagina - About */
+.teaser{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.teaser p{
+    width: 50vw;
+}
+iframe{
+    margin: 2rem;
+    width: 400px;
+    height: 225px;
+}
+
+.winactie{
+    background-color: #484872;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2rem;
+
+}
+.winactie img{
+    width: 350px;
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.merch{
+    padding-left: 2rem;
+}
+
+.tegel-merch{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    align-items: center;
+    padding: 2rem;
+}
+
+.tegel-merch article{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    justify-content:center;
+    background-color: #484872;
+    border-radius: 2em;
+    width: 17.3rem;
+    color: #fff;
+    padding: 2rem;
+}
+
+.tegel-merch img{
+    height: 250px;
+}
+
+.tegel-merch p{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+
+
+
+
